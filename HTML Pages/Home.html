@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Taylor's CV</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <link rel="stylesheet" href="Assets\CSS\stylesheet.css">
+
+
+  <div id="navbar" class="navbar">
+    <ul id="nav">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Project.html">Projects</a></li>
+      <li><a href="ContactMe.html">Contact Me</a></li>
+    </ul>
+  </div>
+
+
+</head>
+
+<body>
+
+  <div class="row">
+
+    <div class="column1">
+
+      <h1>About Me</h1>
+
+      <p>This is the website of Kyle Taylor.</p>
+      <p>This is my website used to show my ability in coding in HTML, CSS and a little JavaScript.</p>
+
+
+    </div>
+
+    <div class="column1">
+
+      <h1>Pictures</h1>
+
+      <div class="slideshow-container" style="width:540px; height:500px;">
+
+        <!-- Full-width images with number and caption text -->
+
+        <div class="mySlides">
+          <div class="SlideNumber">1 / 4</div>
+          <img src="Assets\Images\Slideshow\todders.jpg" style="width:540px; height:500px; border: black 2px solid;">
+          <div class="slideDecription">Me at a stadium tour of pittodrie for freshers</div>
+        </div>
+
+
+        <div class="mySlides">
+          <div class="SlideNumber">2 / 4</div>
+          <img src="Assets\Images\Slideshow\inver.jpg" style="width:540px; height:500px; border: black 2px solid;">
+          <div class="slideDecription">My old school, Inverurie Academy</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="SlideNumber">3 / 4</div>
+          <img src="Assets\Images\Slideshow\spookyMe.jpg" style="width:540px; height:500px; border: black 2px solid;">
+          <div class="slideDecription">Me at a ghost tour of Fyvie Castle</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="SlideNumber">4 / 4</div>
+          <img src="Assets\Images\Slideshow\RGU.jpg" style="width:540px; height:500px; border: black 2px solid;">
+          <div class="slideDecription">Robert Gordons University that i am currenly studying computing science in</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+
+
+
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+
+
+    </div>
+
+
+  </div>
+
+  <footer>
+    Last Updated 12/10/2018
+  </footer>
+
+
+</body>
+
+</html>
