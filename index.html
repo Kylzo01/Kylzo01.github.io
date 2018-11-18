@@ -5,17 +5,19 @@
   <meta charset="utf-8">
   <title>Kyle Taylor - Home</title>
 
+  <!-- Link to google font-->
   <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <!-- Link to CSS-->
   <link rel="stylesheet" href="Assets\CSS\stylesheet.css">
 
-
+  <!-- Create Navigation bar-->
   <div id="navbar" class="navbar">
     <ul id="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="CV.html">CV</a></li>
-      <li><a href="Project.html">Projects</a></li>
-      <li><a href="ContactMe.html">Contact Me</a></li>
+      <!-- Creates text and hyperlink them to the addresses of each page -->
+      <liNav><cur href="index.html">Home</cur></liNav>
+      <liNav><a href="CV.html">CV</a></liNav>
+      <liNav><a href="Project.html">Projects</a></liNav>
+      <liNav><a href="ContactMe.html">Contact Me</a></liNav>
     </ul>
   </div>
 
@@ -24,31 +26,41 @@
 
 <body>
 
+<!-- Create row div -->
   <div class="row">
+
+    <!-- Create Column div -->
 
     <div class="column1">
 
+      <!-- Insert Text -->
       <h1>About Me</h1>
 
       <p>This is the website of Kyle Taylor.</p>
       <p>This is my website used to show my ability in coding in HTML, CSS and a little JavaScript.</p>
 
-
+      <!-- Close Column div -->
     </div>
 
+    <!-- Create a new Colum div. For the second column-->
     <div class="column1">
 
       <h1>Pictures</h1>
 
+      <!-- Open div that is named slideshow-container -->
       <div class="slideshow-container" style="width:540px; height:500px;">
 
-        <!-- Full-width images with number and caption text -->
-
+        <!-- Create Multiple divs called mySlides -->
         <div class="mySlides">
+          <!-- Create and clode a divs called SlideNumber with the number of slide that the user is on -->
           <div class="SlideNumber">1 / 4</div>
+          <!-- Input image with a set width and height. Add a thin black border around the image -->
           <img src="Assets\Images\Slideshow\todders.jpg" style="width:540px; height:500px; border: black 2px solid;">
+          <!-- Add a discription for each of the images added -->
           <div class="slideDecription">Me at a stadium tour of pittodrie for freshers</div>
         </div>
+
+        <!-- Repeat 3 more times -->
 
 
         <div class="mySlides">
@@ -69,17 +81,16 @@
           <div class="slideDecription">Robert Gordons University that i am currenly studying computing science in</div>
         </div>
 
-        <!-- Next and previous buttons -->
+        <!-- Create Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
 
 
-
-
-
+      <!--Add JavaScript so that the slideshow can work -->
       <script>
+
         var slideIndex = 1;
         showSlides(slideIndex);
 
@@ -112,13 +123,17 @@
       </script>
 
 
+<!-- Close Column div -->
     </div>
+
+    <!-- CLose row div -->
 
 
   </div>
 
+  <!-- Add a footer which will show when the website was last updated -->
   <footer>
-    Last Updated 12/10/2018
+    Last Updated 18/11/2018
   </footer>
 
 
