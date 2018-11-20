@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Kyle Taylor - Projects</title>
 
-    <!-- Li -->
-    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Kyle Taylor - Projects</title>
+
+  <!-- Links to stylesheet and google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+  <link rel="stylesheet" href="Assets\CSS\stylesheet.css">
+
+  <!--Creates navigation bar -->
+  <div id="navbar" class="navbar">
+    <ul id="nav">
+      <liNav><a href="index.html">Home</a></liNav>
+      <liNav><a href="CV.html">CV</a></liNav>
+      <liNav>
+        <cur href="Project.html">Projects</cur>
+      </liNav>
+      <liNav><a href="ContactMe.html">Contact Me</a></liNav>
+    </ul>
+  </div>
 
 
-    <link rel="stylesheet" href="Assets\CSS\stylesheet.css">
+</head>
 
+<body>
 
-    <div id="navbar" class="navbar">
-      <ul id="nav">
-        <liNav><a href="index.html">Home</a></liNav>
-        <liNav><a href="CV.html">CV</a></liNav>
-        <liNav><cur href="Project.html">Projects</cur></liNav>
-        <liNav><a href="ContactMe.html">Contact Me</a></liNav>
-      </ul>
-    </div>
+  <h1>My Projects</h1>
 
+  <h3>Project 1 - Arduino Project</h3>
 
-  </head>
+  <!--Insert image that is in the div ProjectImage -->
+  <div class="ProjectImage">
+    <img src="Assets\Images\KeepTalking.jpg" width="300px;" height="250px;">
+    <br>
+    <p4>Keep Talking and Nobody explodes <br> (which our game is inspired by)</p4>
+  </div>
 
-  <body>
+  <!--THis is a block of code about my arduino project that is being made for my RGU grade -->
+  <p2>The first project I undertook was in a group as a part of my computing science course at RGU. For this project we had to use a arduino and some atatchments to create a device that is a product that would be useful for people. We decided to
+    create a bomb disposal game. The game will have differenct modules that will be required to be completed so that the "bomb" does not explode.
+    The game will be created using an arduino, a couple breadboards, wires, buzzers, buttons, led's and will be coded using Java and Processing.<br>
+    Our game was inspired by the VR game "Keep talking and nobody explodes". This game is also a bomb disposal game where one player reads out instruction to another player who has to dismantle a bomb.</p2>
 
-    <h1>My Projects</h1>
+  <!--Indert audio file from specified location -->
+  <audio controls>
+    <source src="Assets\Audio\Arduino.ogg" type="audio/ogg">
+    <source src="Assets\Audio\Arduino.flac" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-<h3>Project 1 - Arduino Project</h3>
-
-<div class="ProjectImage">
-  <img src="Assets\Images\KeepTalking.jpg" width="300px;" height="250px;">
-  <br>
-  <p4>Keep Talking and Nobody explodes <br> (which our game is inspired by)</p4>
-</div>
-
-<p2>The first project I undertook was in a group as a part of my computing science course at RGU. For this project we had to use a arduino and some atatchments to create a device that is a product that would be useful for people. We decided to create a bomb disposal game. The game will have differenct modules that will be required to be completed so that the "bomb" does not explode.
-  The game will be created using an arduino, a couple breadboards, wires, buzzers, buttons, led's and will be coded using Java and Processing.<br>
-  Our game was inspired by the VR game "Keep talking and nobody explodes". This game is also a bomb disposal game where one player reads out instruction to another player who has to dismantle a bomb.</p2>
-<br><br><br><br>
+  <br><br><br><br>
   <h3>Project 2 - My CV Website</h3>
 
+  <!--Insert image that is in the div ProjectImage2 -->
   <div class="ProjectImage2">
-    <img src="Assets\Images\htmlImage.jpg" width="300px;" height="250px;">
+    <img src="Assets\Images\HTML.jpeg" width="300px;" height="250px;">
     <br>
   </div>
 
-  <p2>My next project I was involved with was the creation of this website.This website took me a reasonable amount of time as before I started making it I was not well adversed in my knowledge in HTML. Of the hardests parts of the website was likely the CV Page. This is because I struggled to find a way to make the images disapear effectively on click.
+  <p2>My next project I was involved with was the creation of this website.This website took me a reasonable amount of time as before I started making it I was not well adversed in my knowledge in HTML. Of the hardests parts of the website was
+    likely the CV Page. This is because I struggled to find a way to make the images disapear effectively on click.
     I feel my website could possibly have more colours involved but I aslo beleive that with the minimal bright colours the website looks more professional.</p2>
-</div>
 
-</div>
-      <footer>
-        <br><br><br><br><br>
-        Last Updated 30/10/2018
-      </footer>
+  <!--Indert audio file from specified location -->
+  <audio controls>
+    <source src="Assets\Audio\Work.ogg" type="audio/ogg">
+    <source src="Assets\Audio\Work.flac" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  </div>
 
-  </body>
+  </div>
+  <footer>
+    <br><br><br><br><br>
+    Last Updated 20/11/2018
+  </footer>
+
+</body>
+
 </html>

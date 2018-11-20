@@ -14,7 +14,9 @@
   <div id="navbar" class="navbar">
     <ul id="nav">
       <!-- Creates text and hyperlink them to the addresses of each page -->
-      <liNav><cur href="index.html">Home</cur></liNav>
+      <liNav>
+        <cur href="index.html">Home</cur>
+      </liNav>
       <liNav><a href="CV.html">CV</a></liNav>
       <liNav><a href="Project.html">Projects</a></liNav>
       <liNav><a href="ContactMe.html">Contact Me</a></liNav>
@@ -26,7 +28,7 @@
 
 <body>
 
-<!-- Create row div -->
+  <!-- Create row div -->
   <div class="row">
 
     <!-- Create Column div -->
@@ -71,7 +73,7 @@
 
         <div class="mySlides">
           <div class="SlideNumber">3 / 4</div>
-          <img src="Assets\Images\Slideshow\spookyMe.jpg" style="width:540px; height:500px; border: black 2px solid;">
+          <img src="Assets\Images\Slideshow\SPOOKYME.jpg" style="width:540px; height:500px; border: black 2px solid;">
           <div class="slideDecription">Me at a ghost tour of Fyvie Castle</div>
         </div>
 
@@ -82,7 +84,9 @@
         </div>
 
         <!-- Create Next and previous buttons -->
+        <!--When this button is clicked it will call the function plusSlides with the value of n being -1 -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <!--When this button is clicked it will call the function plusSlides with the value of n being +1 -->
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
@@ -90,40 +94,52 @@
 
       <!--Add JavaScript so that the slideshow can work -->
       <script>
-
         var slideIndex = 1;
+        //Call function showSlides that will decide which image and number will be displayed
         showSlides(slideIndex);
 
         // Next/previous controls
         function plusSlides(n) {
+          //The will just call the function showSlides that will have the value of n
           showSlides(slideIndex += n);
         }
 
-        // Thumbnail image controls
+        // This is a function that will controll what image is currently on display
         function currentSlide(n) {
+          //The will just call the function showSlides that will have the value of n
           showSlides(slideIndex = n);
         }
 
+        //This declares function that basically controlls the entire slideShow and will calculate which image will be displayed
         function showSlides(n) {
           var i;
+
+          //This variable is a variable thar will display what is in the variable to the sliseshow
           var slides = document.getElementsByClassName("mySlides");
+
+          //This checks to see if the slide number is larger than possible then it will loop back to the first image
           if (n > slides.length) {
             slideIndex = 1
           }
+
+          //This checks to see if the slide number is less than 1 and if it is then the code will set the image to be on screen to be the last photo available
           if (n < 1) {
             slideIndex = slides.length
           }
+
+          //Loops through and sets all of the images to not be displayed
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
           }
 
+          //These lines displays all the image that should be currently opened
           slides[slideIndex - 1].style.display = "block";
           dots[slideIndex - 1].className += " active";
         }
       </script>
 
 
-<!-- Close Column div -->
+      <!-- Close Column div -->
     </div>
 
     <!-- CLose row div -->
@@ -133,7 +149,7 @@
 
   <!-- Add a footer which will show when the website was last updated -->
   <footer>
-    Last Updated 18/11/2018
+    Last Updated 20/11/2018
   </footer>
 
 

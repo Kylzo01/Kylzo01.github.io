@@ -1,104 +1,81 @@
 body {
+  /*Set the width of the page to be a mac of 1080 pixels*/
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(235,235,235);
+  /*Set the background colour to be grey */
+  background-color: rgb(235, 235, 235);
 }
 
-
-/* This is the navigation bar
+/*Edit the div naved navbar */
 .navbar {
-  width: 1080px;
-  margin: 0px auto;
-  list-style: none;
-  background-color: rgb(0, 0, 0);
-  overflow: hidden;
+  /*Set the navbar to be sticky when it is 0 pixels from the top of the Page
+This means it will stick t the top of the page*/
   position: sticky;
-  z-index: 99999;
-  font-family: 'Rakkas', cursive;
-  top: 0%;
-  height: 105px;
-}
-
-.navbar li {
-  float: left;
   top: 0px;
+  /* Sets the z-index of the navbar to be high so that it appears infromt of everything. Specifically images that are set to absolute*/
+  z-index: 50;
 }
 
-.navbar a {
-  margin: 0px;
-  display: inline-block;
-  text-align: center;
-  width: 250px;
-
-  text-decoration: none;
-  font-size: 20pt;
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 1px solid white;
+/*This is the navigation bar*/
+/*This generally declares the background for the navigation bar*/
+ul {
+  width: 1080px;
+  list-style-type: none;
+  /*Sets the margin and padding around the buttons to be 0 so that the navbar is sized well*/
+  margin: 0;
+  padding: 0;
+  /*Sets anything that is outwith the navbar to */
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Rakkas', cursive;
 }
 
-*/
-
-ul{
-    width: 1080px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(0,0,0);
-    position: sticky;
-    z-index: 99999;
-    font-family: 'Rakkas', cursive;
-    top: 0%;
-}
-
+/*Sets the text in the navbar to be to the lext of the navigation Bar*/
 liNav {
-    float: left;
+  float: left;
 }
 
+/*This the declaration of the links in the navigation bar*/
 liNav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    width: 270px;
-    font-size: 20pt;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 270px;
+  font-size: 20pt;
 }
 
+/*This is used on a page that is open. The code is practically the same other than there is a thin read border on the bottom of the page to ensure that the user knows what page they are on */
 liNav cur {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    width: 270px;
-    font-size: 20pt;
-    border-bottom: 4px solid rgb(255,0,0);
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 270px;
+  font-size: 20pt;
+  border-bottom: 4px solid rgb(255, 0, 0);
 }
 
-
+/*WHen the mouse is hovering over the particular box in the navigation bar the colour of the box around the link will go grey*/
 liNav a:hover {
-    background-color: rgb(50,50,50);
+  background-color: rgb(50, 50, 50);
 }
 
-ol{
-
+/*Set the list ol to not display any number and to indent the text a little*/
+ol {
   list-style-type: none;
   padding: 5pt;
-
 }
 
-
-
-
-
+/*Set the div GMaps to have 10 padding from the item above it*/
 .GMaps {
   padding-top: 10pt;
 }
 
+/*Set everything in the div CVHeader to be centered in the page*/
 .CVHeader {
   text-align: center;
 }
@@ -113,23 +90,22 @@ input {
   margin-right: auto;
 }
 
-
 /* These are the different fonts*/
+/*THe fonts all link to google font with the type Rakkas with most declaring a different size of font*/
 footer {
   font-family: 'Rakkas', cursive;
 }
 
-h1{
+h1 {
   font-family: 'Rakkas', cursive;
   font-size: 25pt;
+  /*The text will be underlined*/
   text-decoration: underline;
 }
 
 h2 {
   font-family: 'Rakkas', cursive;
   font-size: 20pt;
-  nt-weight: normal;
-  font-weight: normal;
   text-decoration: underline;
 }
 
@@ -137,10 +113,9 @@ h3 {
   font-family: 'Rakkas', cursive;
   font-size: 20pt;
   line-height: 17px;
-    font-weight: normal;
+  font-weight: normal;
   text-decoration: underline;
 }
-
 
 p {
   font-family: 'Rakkas', cursive;
@@ -160,33 +135,35 @@ p2 {
 p3 {
   font-family: 'Rakkas', cursive;
   font-size: 18pt;
+  /*Set the size between each line to be 1 pixel */
   line-height: 1px;
 }
 
-p4{
+p4 {
   font-family: 'Rakkas', cursive;
   font-size: 13pt;
 }
-
 
 fieldset {
   display: inline-block;
 }
 
+/*This eddits what is in teh table that is on the "Contact Me page"*/
 table, th, td {
+  /*Set a border around each item and set it to be 1 pixel thick and to be black*/
   border: 1px solid black;
   font-family: 'Rakkas', cursive;
   text-align: center;
 }
 
-/* This is the creation of the collums*/
-
+/* This is the creation of the 3 column page*/
 .row {
   display: flex;
 }
 
 .column {
   float: left;
+  /*Declares that each of the columns will be 1/3 of the page width*/
   width: 33.33%;
   padding: 10px;
 }
@@ -197,41 +174,41 @@ table, th, td {
   clear: both;
 }
 
-
+/*This is for the 2 column page*/
 .column1 {
+  /*THe width of the page will be hald of the size of the page*/
   flex: 45%;
   padding: 1%
 }
 
-
-
-/* Sets the point of the images*/
-
+/* Sets the Images in CVImages to be set and to not be able to move*/
 .CVImages {
   position: absolute;
+  /*Sets the images to appear infront of some things but to be behind the navbar*/
   z-index: 1;
 }
 
+* {
+  box-sizing: border-box
+}
 
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
+/* Slideshow*/
+/*This sets the total possible size of the slideshow to be 550 pixles*/
 .slideshow-container {
   max-width: 550px;
   position: relative;
-
 }
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
+  /*The buttons will appearhalf way down the slideshow container*/
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -239,6 +216,7 @@ table, th, td {
   color: white;
   font-size: 18px;
   transition: 0.6s ease;
+  /*Sets the two inner corners to be curved*/
   border-radius: 0 3px 3px 0;
 }
 
@@ -248,13 +226,14 @@ table, th, td {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color that is a slight bit transparent */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
+/* This is the css for the descriptions at the bottom of the slideshows */
 .slideDecription {
+  /*Set the colour to be black*/
   color: rgb(0, 0, 0);
   font-size: 18px;
   padding: 5px;
@@ -263,34 +242,28 @@ table, th, td {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   border: black 2px solid
 }
 
 /* Number text (1/3 etc) */
 .SlideNumber {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   padding: 5px;
   position: absolute;
   top: 0;
-    font-weight: bold;
-    background-color: rgb(255,255,255);
-    border: black 2px solid;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border: black 2px solid;
 }
 
-
-
-.ProjectImage{
-
-float: right;
-padding-left: 20px;
-
+.ProjectImage {
+  float: right;
+  padding-left: 20px;
 }
 
-.ProjectImage2{
-
-float: left;
-padding-right: 20px;
-
+.ProjectImage2 {
+  float: left;
+  padding-right: 20px;
 }

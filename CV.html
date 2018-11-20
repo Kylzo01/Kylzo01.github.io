@@ -4,15 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Kyle Taylor - CV</title>
+
+  <!--Links to stylesheet and font -->
   <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <link rel="stylesheet" href="Assets\CSS\stylesheet.css">
 
-
+  <!-- Creates a navbat -->
   <div id="navbar" class="navbar">
     <ul id="nav">
       <liNav><a href="index.html">Home</a></liNav>
-      <liNav><cur href="CV.html">CV</cur></liNav>
+      <liNav>
+        <cur href="CV.html">CV</cur>
+      </liNav>
       <liNav><a href="Project.html">Projects</a></liNav>
       <liNav><a href="ContactMe.html">Contact Me</a></liNav>
     </ul>
@@ -22,44 +26,53 @@
 
 
 <body>
+
+  <!--Creates div and adds text inside the div -->
   <div class="CVHeader">
     <h1>Kyle Taylor - CV</h1>
     <p>Address:12 Maitland Crescent, Inverurie, AB51 4HD <br>
       Email: kyle-taylor@talktalk.net <br>
-      Phone: 07951 218160</p>
+      Phone: 07305 407427</p>
     <main>
-
+      <!--Closes Div -->
   </div>
 
+  <!--Ensure peoole realise there is text behind the images -->
   <p4>Click on images to reveal text</p4>
 
+  <!--Create div "row" -->
   <div class="row">
 
-
+    <!-- Create div "column" -->
     <div class="column">
 
+      <!--Insert the image at the address stated. WHen the image is clicked it will dissapear show by the block " onclick="this.style.display='none';" -->
       <div class="CVImages">
-        <img src="Assets\Images\CVStockImage.jpg" onclick="this.style.display='none';" width="350px;" height="650px;">
+        <img src="Assets\Images\CVStockImage.jpg" onclick="this.style.display='none';" width="350px;" height="660px;">
       </div>
 
       <h2>Personal Statement</h2>
 
+      <!--Insert block of text that is my personal statement -->
       <p1>I am currently a student studying Computing Science at Robert Gordons University.
         I used to be a pupil at Inverurie Academy.
         <br><br> I feel I am committed. This is shown by the fact that I have been playing cello since I was seven years old.
-        I also was in cubs and scouts for around 6 years until I was too old and had to leave. In my time in cubs and scouts got the highest possible award in both groups. In cubs this was the "Silver Cub Scout Award" and in scouts it was the "Gold
+        I also was in cubs and scouts for around 6 years until I was too old and had to leave. In my time in cubs and scouts I got the highest possible award in both groups. In cubs this was the "Silver Cub Scout Award" and in scouts it was the
+        "Gold
         Scout Award".
-        <br><br>I also went to many extra-curricular groups such as the school choir, the school orchestra.
-        <br><br>I go to badminton training and also volunteer at a beginner’s badminton group helping teach the younger players. I also volunteered at a coding club held at the school that helps children in S1-3 learn to code when I was in S6
+        <br><br>I also went to many extra-curricular groups such as the school choir and the school orchestra in my time at Inverurie Academy.
+        <br><br>I go to badminton training and am also volunteer at a beginner’s badminton group helping to teach the younger players. I also volunteered at a coding club held at the school that helps children in S1-3 learn to code. I did this when
+        I was in S6.
         From around S3 to S6 i was a part of the "Rights Respecting School Group". This group promotes equality amongst pupils. This has helped me because it helps me be part of a group and shown me many ways to look at situations.
 
       </p1>
+
       <br>
 
-
+      <!--THis is an audio button that will play a text to speech version of the personal statement so that people with difficulties reading are able to take in the information easier -->
       <audio controls>
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg">
+        <source src="Assets\Audio\CV.ogg" type="audio/ogg">
+        <source src="Assets\Audio\CV.flac" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
 
@@ -67,9 +80,9 @@
 
     <div class="column">
 
-
+      <!--Insert the image at the address stated. WHen the image is clicked it will dissapear show by the block " onclick="this.style.display='none';" -->
       <div class="CVImages">
-        <img src="Assets\Images\qual.jpg" onclick="this.style.display='none';" width="350px;" height="650px;">
+        <img src="Assets\Images\qual.jpg" onclick="this.style.display='none';" width="350px;" height="660px;">
       </div>
 
       <h2>Eduction</h2>
@@ -78,13 +91,17 @@
 
       <h3>National 5</h3>
 
+      <!--Create a list -->
       <ol>
+        <!--This is list point 1 that includes my first grade -->
         <li>
           <p1>Music - A</p1>
         </li>
+        <!--This is list point 2 that includes my second grade -->
         <li>
           <p1>History - A</p1>
         </li>
+        <!-- Repeat until the </ol> tag -->
         <li>
           <p1>Maths - A</p1>
         </li>
@@ -129,44 +146,48 @@
         <li>
           <p1>English - D</p1>
         </li>
-      </0l>
-      <br>
+        </0l>
+        <br>
 
-      <audio controls>
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+        <!-- Play an audio file at the address specified -->
+        <audio controls>
+          <source src="Assets\Audio\Qual.ogg" type="audio/ogg">
+          <source src="Assets\Audio\Qual.flac" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
 
-      <!-- Close column div -->
+        <!-- Close column div -->
     </div>
-
-
 
     <div class="column">
 
+      <!--Insert the image at the address stated. WHen the image is clicked it will dissapear show by the block " onclick="this.style.display='none';" -->
       <div class="CVImages">
-        <img src="Assets\Images\morries.jpg" onclick="this.style.display='none';" width="350px;" height="650px;">
+        <img src="Assets\Images\morries.jpg" onclick="this.style.display='none';" width="350px;" height="660px;">
       </div>
 
       <section>
         <h2>Work History</h2>
 
+        <!--THis block of text is my previous jobs and informatio about them -->
         <p1>In my life so far I have had 2 jobs. My first job was a paper round and my second (and current) job was at Morrisons</p1>
         <br><br>
-        <p1>My paper round was a morning paper round and involved me getting up at 6 am so that I would have time to do my paper round and also have time to get ready for school. I had this paper round for around 3 years and I was reliable throughout
+        <p1>My paper round was a morning paper round and involved me getting up at 6 am so that I would have time to do my paper round and also have time to get ready for school. I had this paper round for around 3 years and I was reliable
+          throughout
           this time. I never missed any days in my time with a paper round, the only days I missed was due to holidays.</p1>
-          <br><br>
-        <p1>As i said before, I currently work at Morisons in Inverurie. When I started I worked in the groceries department. This was generally doing what was needed around the store. Such as stacking shelves or tidying up the shelves. I was later then moved to the bakery department.
+        <br><br>
+        <p1>As i said before, I currently work at Morisons in Inverurie. When I started I worked in the groceries department. This was generally doing what was needed around the store. Such as stacking shelves or tidying up the shelves. I was later
+          then moved to the bakery department.
           In the bakery department I have to date check products and reduce products as and when needed, I need to ensure that I do this accurately so that I do not give the store a bad image</p1>
 
 
 
       </section>
 
+      <!-- Play an audio file at the address specified -->
       <audio controls>
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg">
+        <source src="Assets\Audio\Work.ogg" type="audio/ogg">
+        <source src="Assets\Audio\Work.flac" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
 
@@ -177,7 +198,7 @@
 
   <br><br>
   <footer>
-    Last Updated 13/11/2018
+    Last Updated 20/11/2018
   </footer>
 </body>
 
